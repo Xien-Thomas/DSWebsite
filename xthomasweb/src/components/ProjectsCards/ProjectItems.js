@@ -1,14 +1,20 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Button } from "../Buttons/Buttons";
 
-function ProjectItems(){
+
+function ProjectItems(props){
     return(
         <>
-            <li classname="items">
-                <Link className="item_link">
+            <div className="item">
+                <div className="item_link">
+                    <img src={props.src} alt="SketchPals" className="item_img"/>
                     
-                </Link>
-            </li>
+                    <div className="item_info">
+                        <h5 className="item_text">{props.text}</h5>
+                        <Button classeName="item_button" buttonStyle="btn--outline">View More</Button>
+                    </div>
+                </div>
+            </div>
         </>
     )
 }

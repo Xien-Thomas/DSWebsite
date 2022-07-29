@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 
 import Navbar from "./components/Navbar/Navbar";
 import home from "./components/pages/home";
-import projects from "./components/pages/projects";
+import projectPage from "./components/pages/projectPage";
 
 import './App.css';
 
@@ -15,7 +15,7 @@ function App() {
         <Routes>
           
           <Route path="/home" exact element={home()}/>
-          <Route path="/projects" exact element={projects}/>
+          <Route path="/projects" exact element={projectPage()}/>
           <Route path="" element={<Navigate replace to="/home"/>}/>
         </Routes>
       </Router>
