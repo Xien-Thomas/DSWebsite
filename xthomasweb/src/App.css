@@ -1,7 +1,10 @@
 .App {
   text-align: center;
+  
 }
-
+:root{
+  background-color: rgb(73, 73, 73);;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -26,6 +29,18 @@
 
 .App-link {
   color: #61dafb;
+}
+/* popup stuff */
+.popup-overlay{
+  background: rgba(0,0,0,.5);
+}
+.popup-content {
+  border-radius: 5px;
+  padding: 0.5rem;
+  background-color: #292d3e;
+  border: 1px solid #464545;
+  color: #fff;
+  
 }
 
 @keyframes App-logo-spin {
