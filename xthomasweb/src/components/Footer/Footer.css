@@ -1,0 +1,22 @@
+.footer-container{
+    background: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+}
+.footer-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.footer-column{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white;
+    margin-left: 40px;
+}
+.footer-row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(12rem, 16rem));
+    grid-gap: 20px;
+}

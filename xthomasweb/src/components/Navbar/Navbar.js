@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import { faCoffee } from "@fortawesome/free-solid-svg-icons";
+// import { faCoffee } from "@fortawesome/free-solid-svg-icons";
 import { faTimes } from "@fortawesome/free-solid-svg-icons";
 // fontawesome.library.add(faCoffee);
 
@@ -47,21 +47,16 @@ function Navbar() {
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-links" onClick={closeMobileMenu}>
-                About
-              </Link>
-            </li>
-            <li className="nav-item">
               <Link
-                to="/contact"
+                to="/blog"
                 className="nav-links-mobile"
                 onClick={closeMobileMenu}
               >
-                Contact
+                Blog
               </Link>
             </li>
           </ul>
-          {button && <Button buttonStyle="btn--outline">CONTACT</Button>}
+          {button && <Link to="/blog"><Button buttonStyle="btn--outline" >Blog</Button></Link>}
         </div>
       </nav>
     );
